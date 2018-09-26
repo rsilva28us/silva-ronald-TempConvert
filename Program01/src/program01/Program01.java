@@ -9,6 +9,8 @@ package program01;
  *
  * @author ronsilva
  */
+import java.util.Scanner;
+
 public class Program01 {
 
     /**
@@ -16,6 +18,12 @@ public class Program01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        double tempc, tempf;
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter temperature in Celsius: ");
+        tempc = keyboard.nextDouble();
+        tempf = (9.0 / 5.0) * tempc + 32;
+        System.out.println("Temperature in Fahrenheit " + tempf);
     }
-    
 }
